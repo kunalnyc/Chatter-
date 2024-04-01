@@ -1,0 +1,1 @@
+ E:\\Frog\\flutter-chat-demo\\.dart_tool\\flutter_build\\a20cede8356d7d1578f619a6f0ba22a2\\native_assets.yaml: 

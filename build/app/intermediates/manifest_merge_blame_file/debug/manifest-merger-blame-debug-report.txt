@@ -1,0 +1,595 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.dfa.flutterchatdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.VIBRATE" />
+12-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:5:5-66
+12-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:5:22-63
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+13-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+14-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+14-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+15-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:26:22-79
+17    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+17-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kunal\.gradle\caches\transforms-3\7bd1e3903a53cf4a9854b9035d66b44c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+17-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\kunal\.gradle\caches\transforms-3\7bd1e3903a53cf4a9854b9035d66b44c\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+18
+19    <permission
+19-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+20        android:name="com.dfa.flutterchatdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.dfa.flutterchatdemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+24
+25    <application
+25-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:7:5-50:19
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.10.1] C:\Users\kunal\.gradle\caches\transforms-3\efd3f8c8a5dd8ea8c719d5c8a8ebaacf\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:8:9-43
+29        android:label="flutter_chat_demo" >
+29-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:9:9-42
+30        <meta-data
+30-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:10:9-12:54
+31            android:name="com.google.firebase.messaging.default_notification_icon"
+31-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:11:13-83
+32            android:resource="@mipmap/ic_launcher" />
+32-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:12:13-51
+33
+34        <activity
+34-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:13:9-44:20
+35            android:name="com.dfa.flutterchatdemo.MainActivity"
+35-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:14:13-41
+36            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+36-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:15:13-163
+37            android:hardwareAccelerated="true"
+37-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:16:13-47
+38            android:launchMode="singleTop"
+38-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:17:13-43
+39            android:theme="@style/LaunchTheme"
+39-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:18:13-47
+40            android:windowSoftInputMode="adjustResize" >
+40-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:19:13-55
+41
+42            <!--
+43                 Specifies an Android theme to apply to this Activity as soon as
+44                   the Android process has started. This theme is visible to the user
+45                   while the Flutter UI initializes. After that, this theme continues
+46                   to determine the Window background behind the Flutter UI.
+47            -->
+48            <meta-data
+48-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:24:13-26:57
+49                android:name="io.flutter.embedding.android.NormalTheme"
+49-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:25:17-72
+50                android:resource="@style/NormalTheme" />
+50-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:26:17-54
+51            <!--
+52                 Displays an Android View that continues showing the launch screen
+53                 Drawable until Flutter paints its first frame, then this splash
+54                 screen fades out. A splash screen is useful to avoid any visual
+55                 gap between the end of Android's launch screen and the painting of
+56                 Flutter's first frame.
+57            -->
+58            <meta-data
+58-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:32:13-34:66
+59                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+59-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:33:17-81
+60                android:resource="@drawable/launch_background" />
+60-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:34:17-63
+61
+62            <intent-filter>
+62-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:36:13-39:29
+63                <action android:name="android.intent.action.MAIN" />
+63-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:37:17-69
+63-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:37:25-66
+64
+65                <category android:name="android.intent.category.LAUNCHER" />
+65-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:38:17-77
+65-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:38:27-74
+66            </intent-filter>
+67            <intent-filter>
+67-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:40:13-43:29
+68                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+68-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:41:17-69
+68-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:41:25-66
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:17-76
+70-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:27-73
+71            </intent-filter>
+72        </activity>
+73        <!--
+74             Don't delete the meta-data below.
+75                This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+76        -->
+77        <meta-data
+77-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:47:9-49:33
+78            android:name="flutterEmbedding"
+78-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:48:13-44
+79            android:value="2" />
+79-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:49:13-30
+80
+81        <service
+81-->[:cloud_firestore] E:\Frog\flutter-chat-demo\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+82            android:name="com.google.firebase.components.ComponentDiscoveryService"
+82-->[:cloud_firestore] E:\Frog\flutter-chat-demo\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+83            android:directBootAware="true"
+83-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+84            android:exported="false" >
+84-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:68:13-37
+85            <meta-data
+85-->[:cloud_firestore] E:\Frog\flutter-chat-demo\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+86-->[:cloud_firestore] E:\Frog\flutter-chat-demo\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-134
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:cloud_firestore] E:\Frog\flutter-chat-demo\build\cloud_firestore\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+88            <meta-data
+88-->[:firebase_auth] E:\Frog\flutter-chat-demo\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+89                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+89-->[:firebase_auth] E:\Frog\flutter-chat-demo\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[:firebase_auth] E:\Frog\flutter-chat-demo\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+91            <meta-data
+91-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+92                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+92-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+93                android:value="com.google.firebase.components.ComponentRegistrar" />
+93-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+94            <meta-data
+94-->[:firebase_storage] E:\Frog\flutter-chat-demo\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+95                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+95-->[:firebase_storage] E:\Frog\flutter-chat-demo\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-126
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[:firebase_storage] E:\Frog\flutter-chat-demo\build\firebase_storage\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+97            <meta-data
+97-->[:firebase_core] E:\Frog\flutter-chat-demo\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+98                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+98-->[:firebase_core] E:\Frog\flutter-chat-demo\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[:firebase_core] E:\Frog\flutter-chat-demo\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+101                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+101-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:17:13-19:85
+104                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+104-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:18:17-122
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:19:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:20:13-22:85
+107                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+107-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:21:17-111
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\kunal\.gradle\caches\transforms-3\e4aabacd63e14a811980c1645d595874\transformed\jetified-firebase-firestore-24.10.1\AndroidManifest.xml:22:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:57:13-59:85
+110                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+110-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:58:17-122
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:59:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:60:13-62:85
+113                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+113-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:61:17-119
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:62:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+116                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+116-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+119                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+119-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\kunal\.gradle\caches\transforms-3\0dd08527ebfe5fe6c1535901b646345d\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\kunal\.gradle\caches\transforms-3\af240403ddd6f56e2e3ed39cdd2a8d5b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+122                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+122-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\kunal\.gradle\caches\transforms-3\af240403ddd6f56e2e3ed39cdd2a8d5b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\kunal\.gradle\caches\transforms-3\af240403ddd6f56e2e3ed39cdd2a8d5b\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+125                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+125-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+128-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\kunal\.gradle\caches\transforms-3\19d3d920e98c81bd2e4205e0ecbb3d4e\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:25:13-27:85
+131                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+131-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:26:17-120
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:27:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:28:13-30:85
+134                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+134-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:29:17-117
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\kunal\.gradle\caches\transforms-3\ca5962fc08bc4165fdbbcb6382194c69\transformed\jetified-firebase-appcheck-17.1.1\AndroidManifest.xml:30:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\5ecc24afc10016d78dc980e2d30fc70a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+137                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+137-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\5ecc24afc10016d78dc980e2d30fc70a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\5ecc24afc10016d78dc980e2d30fc70a\transformed\jetified-firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+140                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+140-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+142            <meta-data
+142-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\kunal\.gradle\caches\transforms-3\03b6062746925dd2affec0b6a3a81fbf\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+143                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+143-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\kunal\.gradle\caches\transforms-3\03b6062746925dd2affec0b6a3a81fbf\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+144                android:value="com.google.firebase.components.ComponentRegistrar" />
+144-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\kunal\.gradle\caches\transforms-3\03b6062746925dd2affec0b6a3a81fbf\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+145        </service>
+146        <service
+146-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+147            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+147-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+148            android:exported="false"
+148-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+149            android:permission="android.permission.BIND_JOB_SERVICE" />
+149-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+150        <service
+150-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+151            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+151-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+152            android:exported="false" >
+152-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+153            <intent-filter>
+153-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+154                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+154-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+154-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+155            </intent-filter>
+156        </service>
+157
+158        <receiver
+158-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+159            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+159-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+160            android:exported="true"
+160-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+161            android:permission="com.google.android.c2dm.permission.SEND" >
+161-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+162            <intent-filter>
+162-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+163                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+163-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+163-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+164            </intent-filter>
+165        </receiver>
+166
+167        <provider
+167-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+168            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+168-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+169            android:authorities="com.dfa.flutterchatdemo.flutterfirebasemessaginginitprovider"
+169-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+170            android:exported="false"
+170-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+171            android:initOrder="99" />
+171-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+172        <provider
+172-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+173            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+173-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+174            android:authorities="com.dfa.flutterchatdemo.flutter.image_provider"
+174-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+175            android:exported="false"
+175-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+176            android:grantUriPermissions="true" >
+176-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+177            <meta-data
+177-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+178                android:name="android.support.FILE_PROVIDER_PATHS"
+178-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+179                android:resource="@xml/flutter_image_picker_file_paths" />
+179-->[:image_picker_android] E:\Frog\flutter-chat-demo\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+180        </provider>
+181
+182        <activity
+182-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+183            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+183-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+184            android:excludeFromRecents="true"
+184-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+185            android:exported="true"
+185-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+186            android:launchMode="singleTask"
+186-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+187            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+187-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+188            <intent-filter>
+188-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+189                <action android:name="android.intent.action.VIEW" />
+189-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+189-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+190
+191                <category android:name="android.intent.category.DEFAULT" />
+191-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:17-76
+191-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:27-73
+192                <category android:name="android.intent.category.BROWSABLE" />
+192-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+192-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+193
+194                <data
+194-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+195                    android:host="firebase.auth"
+195-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+196                    android:path="/"
+196-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+197                    android:scheme="genericidp" />
+197-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+198            </intent-filter>
+199        </activity>
+200        <activity
+200-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+201            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+201-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+202            android:excludeFromRecents="true"
+202-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+203            android:exported="true"
+203-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+204            android:launchMode="singleTask"
+204-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+205            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+205-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+206            <intent-filter>
+206-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+207                <action android:name="android.intent.action.VIEW" />
+207-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:17-69
+207-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:36:25-66
+208
+209                <category android:name="android.intent.category.DEFAULT" />
+209-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:17-76
+209-->E:\Frog\flutter-chat-demo\android\app\src\main\AndroidManifest.xml:42:27-73
+210                <category android:name="android.intent.category.BROWSABLE" />
+210-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:17-78
+210-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:39:27-75
+211
+212                <data
+212-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:41:17-44:51
+213                    android:host="firebase.auth"
+213-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:42:21-49
+214                    android:path="/"
+214-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:43:21-37
+215                    android:scheme="recaptcha" />
+215-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\kunal\.gradle\caches\transforms-3\2c823a6f02071ec0b795592ee5a19157\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:44:21-48
+216            </intent-filter>
+217        </activity>
+218
+219        <receiver
+219-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:29:9-40:20
+220            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+220-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:30:13-78
+221            android:exported="true"
+221-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:31:13-36
+222            android:permission="com.google.android.c2dm.permission.SEND" >
+222-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:32:13-73
+223            <intent-filter>
+223-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+224                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+224-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+224-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+225            </intent-filter>
+226
+227            <meta-data
+227-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:37:13-39:40
+228                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+228-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:38:17-92
+229                android:value="true" />
+229-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:39:17-37
+230        </receiver>
+231        <!--
+232             FirebaseMessagingService performs security checks at runtime,
+233             but set to not exported to explicitly avoid allowing another app to call it.
+234        -->
+235        <service
+235-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:46:9-53:19
+236            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+236-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:47:13-82
+237            android:directBootAware="true"
+237-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:48:13-43
+238            android:exported="false" >
+238-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\kunal\.gradle\caches\transforms-3\4ad1c3708ff9e4a2b44c8c1d44ea6fe7\transformed\jetified-firebase-messaging-23.4.0\AndroidManifest.xml:49:13-37
+239            <intent-filter android:priority="-500" >
+239-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+240                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+240-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+240-->[:firebase_messaging] E:\Frog\flutter-chat-demo\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+241            </intent-filter>
+242        </service>
+243
+244        <activity
+244-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+245            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+245-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+246            android:excludeFromRecents="true"
+246-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+247            android:exported="false"
+247-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+248            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+248-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+249        <!--
+250            Service handling Google Sign-In user revocation. For apps that do not integrate with
+251            Google Sign-In, this service will never be started.
+252        -->
+253        <service
+253-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+254            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+254-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+255            android:exported="true"
+255-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+256            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+256-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+257            android:visibleToInstantApps="true" />
+257-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\kunal\.gradle\caches\transforms-3\065e20b62c2b65cb47bfeae0551d40e8\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+258
+259        <provider
+259-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+260            android:name="com.google.firebase.provider.FirebaseInitProvider"
+260-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+261            android:authorities="com.dfa.flutterchatdemo.firebaseinitprovider"
+261-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+262            android:directBootAware="true"
+262-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+263            android:exported="false"
+263-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+264            android:initOrder="100" />
+264-->[com.google.firebase:firebase-common:20.4.2] C:\Users\kunal\.gradle\caches\transforms-3\3d9ef81639f6858a1a5cb7ee7762c162\transformed\jetified-firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+265
+266        <activity
+266-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\kunal\.gradle\caches\transforms-3\61630ac35564652138d224fa8a6a6c51\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+267            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+267-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\kunal\.gradle\caches\transforms-3\61630ac35564652138d224fa8a6a6c51\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+268            android:exported="false"
+268-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\kunal\.gradle\caches\transforms-3\61630ac35564652138d224fa8a6a6c51\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+269            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+269-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\kunal\.gradle\caches\transforms-3\61630ac35564652138d224fa8a6a6c51\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+270
+271        <meta-data
+271-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\kunal\.gradle\caches\transforms-3\ec309a618249b475a2bcb44cc3d8bda2\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+272            android:name="com.google.android.gms.version"
+272-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\kunal\.gradle\caches\transforms-3\ec309a618249b475a2bcb44cc3d8bda2\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+273            android:value="@integer/google_play_services_version" />
+273-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\kunal\.gradle\caches\transforms-3\ec309a618249b475a2bcb44cc3d8bda2\transformed\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+274
+275        <uses-library
+275-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+276            android:name="androidx.window.extensions"
+276-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+277            android:required="false" />
+277-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+278        <uses-library
+278-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+279            android:name="androidx.window.sidecar"
+279-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+280            android:required="false" />
+280-->[androidx.window:window:1.0.0-beta04] C:\Users\kunal\.gradle\caches\transforms-3\120d5d2332fb8084d841619672fea64b\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+281
+282        <provider
+282-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+283            android:name="androidx.startup.InitializationProvider"
+283-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+284            android:authorities="com.dfa.flutterchatdemo.androidx-startup"
+284-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+285            android:exported="false" >
+285-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+286            <meta-data
+286-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+287                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+287-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+288                android:value="androidx.startup" />
+288-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+289        </provider>
+290
+291        <receiver
+291-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+292            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+292-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+293            android:directBootAware="false"
+293-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+294            android:enabled="true"
+294-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+295            android:exported="true"
+295-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+296            android:permission="android.permission.DUMP" >
+296-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+297            <intent-filter>
+297-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+298                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+298-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+298-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+299            </intent-filter>
+300            <intent-filter>
+300-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+301                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+301-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+301-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+302            </intent-filter>
+303            <intent-filter>
+303-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+304                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+304-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+304-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+305            </intent-filter>
+306            <intent-filter>
+306-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+307                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+307-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+307-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\kunal\.gradle\caches\transforms-3\d29dca6e81a2ca2e190ce43f7ea10307\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+308            </intent-filter>
+309        </receiver>
+310
+311        <service
+311-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+312            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+312-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+313            android:exported="false" >
+313-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+314            <meta-data
+314-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+315                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+315-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+316                android:value="cct" />
+316-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\9f9749a48a37d9a403349efed8dc081e\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+317        </service>
+318        <service
+318-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+319            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+319-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+320            android:exported="false"
+320-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+321            android:permission="android.permission.BIND_JOB_SERVICE" >
+321-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+322        </service>
+323
+324        <receiver
+324-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+325            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+325-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+326            android:exported="false" />
+326-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\kunal\.gradle\caches\transforms-3\5c38a0fc3a01e2e5f0c5b3ae05fc0ef8\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+327    </application>
+328
+329</manifest>
